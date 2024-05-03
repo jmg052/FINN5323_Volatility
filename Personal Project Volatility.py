@@ -25,7 +25,7 @@ def restore_placeholder(event):
         ticker_entry.insert(0, 'Enter ticker here')
 
 def fetch_stock_data(ticker):
-    db = wrds.Connection(wrds_username='jmg052')
+    db = wrds.Connection(wrds_username='username')
     sql_query = f"""
         SELECT 
             b.date,
